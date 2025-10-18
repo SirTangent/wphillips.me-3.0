@@ -1,0 +1,47 @@
+# Bundler cache
+.bundle
+vendor
+# For a gem (theme library), Gemfile.lock is typically not committed
+Gemfile.lock
+
+# Jekyll cache
+.jekyll-cache
+.jekyll-metadata
+_site
+.sass-cache/
+
+# RubyGems
+*.gem
+
+# NPM dependencies
+node_modules
+# Keep package-lock.json tracked for reproducible JS builds; remove from ignore
+# package-lock.json
+
+# IDE configurations
+.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+
+# Logs & diagnostics
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Env / secrets (add if you introduce environment files)
+.env
+.env.*
+
+# Misc build artifacts that SHOULD be committed for the theme distribution:
+# (Dist JS and purged vendor Sass are part of the packaged theme.)
+# _sass/vendors   (removed from ignore)
+# assets/js/dist  (removed from ignore)
+
+# If you decide to re-generate assets in CI instead of tracking them, re-add the above and adjust gemspec packaging accordingly.
